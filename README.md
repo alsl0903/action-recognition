@@ -6,7 +6,7 @@ https://github.com/felixchenfy/Realtime-Action-Recognition
 
 ### cmu 폴더로 이동하여 openpose를 사용하기 위한 모듈 다운로드
 ~~~ cd $MyRoot/src/githubs/tf-pose-estimation/models/graph/cmu ~~~  
-~~~ bash download.sh ~~~
+ bash download.sh 
 
 # 1. 가상환경 설정 후 필요한 라이브러리 다운로드(버전 맞춰서 다운로드)
 conda create -n tf tensorflow-gpu
