@@ -40,7 +40,7 @@ cd $MyRoot/src/githubs/tf-pose-estimation
 
 python run.py --model=mobilenet_thin —resize=432x368 --image=./images/p1.jpg
 
-# ※ 파라미터 수정
+## ※ 파라미터 수정
 config/config.yaml 파일에서 기호에 맞는 이미지 분류를 위해 파라미터를 수정할 수 있음 (ex. kick -> wave )
 
 또한 image_folder를 입력하여 본인 pc의 경로에 따라 훈련시킬 데이터셋 경로 지정가능.   
