@@ -1,9 +1,14 @@
 # action-recognition
 
 ### tf-pose-estimation 다운로드
+```
 cd src/githubs  
+```
+
+```
 git clone https://github.com/felixchenfy/ildoonet-tf-pose-estimation
 mv ildoonet-tf-pose-estimation tf-pose-estimation
+```
 
 ### 깃허브에서 코드 다운로드 후 폴더 이동 
 https://github.com/felixchenfy/Realtime-Action-Recognition
