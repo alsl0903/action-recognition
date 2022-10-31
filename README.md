@@ -1,10 +1,14 @@
 # action-recognition
 
+### tf-pose-estimation 다운로드
+cd src/githubs  
+git clone https://github.com/felixchenfy/ildoonet-tf-pose-estimation
+mv ildoonet-tf-pose-estimation tf-pose-estimation
 
 ### 깃허브에서 코드 다운로드 후 폴더 이동 
 https://github.com/felixchenfy/Realtime-Action-Recognition
 
-### cmu 폴더로 이동하여 openpose를 사용하기 위한 모듈 다운로드
+### cmu 폴더로 이동하여 훈련된 모델 다운로드
 ```
 cd $MyRoot/src/githubs/tf-pose-estimation/models/graph/cmu 
 ``` 
