@@ -47,16 +47,20 @@ config/config.yaml 파일에서 기호에 맞는 이미지 분류를 위해 파�
 
 # 3. 훈련 스크립트
 
-src/s1_get_skeletons_from_training_imgs.py    
+##### src/s1_get_skeletons_from_training_imgs.py 
+
 제작한 이미지 데이터셋에서 각각의 이미지마다 skeleton(골격)데이터 감지 및 출력
 
-src/s2_put_skeleton_txts_to_a_single_txt.py
+##### src/s2_put_skeleton_txts_to_a_single_txt.py
+
 출력된 골격 데이터(텍스트)들을 하나의 텍스트로 취합  
 
-src/s3_preprocess_features.py
+##### src/s3_preprocess_features.py
+
 골격 데이터를 (x,y) 좌표에 따라 노이즈를 추가하여 데이터를 증가시키는 전처리 작업 진행 및 신체 속도, 정규화된 관절 위치, 관절 속도의 특징을 추출
 
-src/s4_train.py 
+##### src/s4_train.py 
+
 전처리된 데이터셋을 기반으로 100*100*100 3개 레이어의 DNN 분류기로 훈련 및 trained_classifier.pickle에 훈련시킨 모델 저장
 
 
