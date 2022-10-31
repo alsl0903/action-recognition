@@ -6,28 +6,44 @@ https://github.com/felixchenfy/Realtime-Action-Recognition
 
 ### cmu 폴더로 이동하여 openpose를 사용하기 위한 모듈 다운로드
 cd $MyRoot/src/githubs/tf-pose-estimation/models/graph/cmu  
+
 bash download.sh 
 
 # 1. 가상환경 설정 후 필요한 라이브러리 다운로드(버전 맞춰서 다운로드)
 conda create -n tf tensorflow-gpu
+
 conda activate tf
+
 cd $MyRoot/src/githubs/tf-pose-estimation
+
 pip3 install -r requirements.txt
+
 pip3 install jupyter tqdm
+
 pip3 install tensorflow-gpu==1.13.1
+
 sudo apt install swig
+
 pip3 install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
+
 cd $MyRoot/src/githubs/tf-pose-estimation/tf_pose/pafprocess
+
 swig -python -c++ pafprocess.i && python3 setup.py build_ext —inplace
+
 cd $MyRoot
+
 pip3 install –r requirements.txt
 
 # 2. 예제를 실행하여 설치 확인
+
 cd $MyRoot/src/githubs/tf-pose-estimation
+
 python run.py --model=mobilenet_thin —resize=432x368 --image=./images/p1.jpg
 
 # ※ 파라미터 수정
-config/config.yaml 파일에서 기호에 맞는 이미지 분류를 위해 파라미터를 수정할 수 있음 (ex. kick -> wave ) 또한 image_folder를 입력하여 본인 pc의 경로에 따라 훈련시킬 데이터셋 경로 지정가능.   
+config/config.yaml 파일에서 기호에 맞는 이미지 분류를 위해 파라미터를 수정할 수 있음 (ex. kick -> wave )
+
+또한 image_folder를 입력하여 본인 pc의 경로에 따라 훈련시킬 데이터셋 경로 지정가능.   
 
 # 3. 훈련 스크립트
 
